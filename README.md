@@ -1,5 +1,10 @@
 # URBackup Client in Docker
 
+## Info
+
+  - Official Webpage: https://www.urbackup.org/
+  - Client script download URL: https://www.urbackup.org/download.html#linux_all_binary
+
 ## Build
 
 ```
