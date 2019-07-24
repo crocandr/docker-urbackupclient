@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  urbackup-client:
+    image: croc/urbackup-client
+    environment:
+      - SOURCES="/srv /home /root /sources"
+    volumes:
+      - '/etc/localtime:/etc/localtime:ro'
+      - './sources:/sources'
+    ports:
+      - '35621:35621'
+      - '35622:35622/udp'
+      - '35623:35623'
+    restart: unless-stopped
